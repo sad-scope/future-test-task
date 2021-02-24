@@ -1,0 +1,10 @@
+version: "3.1"
+
+services:
+  future-test-task:
+    ports:
+      - 3002:80
+    container_name: future-test-task
+    restart: unless-stopped
+    build:
+      context: .
